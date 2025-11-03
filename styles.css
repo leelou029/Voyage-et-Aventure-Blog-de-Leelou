@@ -36,7 +36,7 @@ nav a.active, nav a:hover {
   text-align: center;
   padding: 60px 20px;
   background: url("https://source.unsplash.com/1600x600/?travel") center/cover no-repeat;
-  color: white;  /* Texte sur l'image en blanc, mais si tu veux plus de contraste, on peut changer ça */
+  color: black;  /* Texte sur l'image en blanc, mais si tu veux plus de contraste, on peut changer ça */
 }
 
 .hero h1 {
