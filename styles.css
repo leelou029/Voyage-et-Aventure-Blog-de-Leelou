@@ -1,3 +1,4 @@
+/* Style global du body */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #333;  /* Texte global en gris foncé pour plus de lisibilité */
 }
 
+/* Header */
 header {
   background: linear-gradient(90deg, #00b4d8, #90e0ef);
   color: #fff;  /* Texte du header en blanc */
@@ -32,6 +34,7 @@ nav a.active, nav a:hover {
   text-decoration: underline;
 }
 
+/* Section Hero */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -43,6 +46,7 @@ nav a.active, nav a:hover {
   color: #2e2e2e; /* Change la couleur du titre dans la section hero en gris foncé */
 }
 
+/* Style pour les boutons */
 button {
   background-color: #ffb703;
   border: none;
@@ -56,6 +60,7 @@ button:hover {
   background-color: #fb8500;  /* Couleur du bouton au survol */
 }
 
+/* Galerie d'images */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -73,6 +78,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Formulaire */
 form {
   display: flex;
   flex-direction: column;
@@ -92,6 +98,7 @@ button:hover {
   background-color: #fb8500;  /* Couleur du bouton au survol */
 }
 
+/* Footer */
 footer {
   background-color: #023047;
   color: white;
@@ -100,6 +107,66 @@ footer {
   margin-top: 30px;
 }
 
+/* Classe cachée */
 .hidden {
   display: none;
+}
+
+/* === Styles pour la modale === */
+
+/* Modale */
+.modal {
+  display: none; /* La modale est cachée par défaut */
+  position: fixed;
+  z-index: 10; /* Pour que la modale soit au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond sombre avec un peu de transparence */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenu de la modale */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px; /* Taille maximale de la modale */
+  text-align: center;
+}
+
+/* Image dans la modale */
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description de l'image dans la modale */
+.description {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #333; /* Couleur du texte de la description */
+}
+
+/* Bouton de fermeture (croix) */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Effet au survol pour la croix */
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
 }
