@@ -137,6 +137,7 @@ footer {
   width: 80%;
   max-width: 600px; /* Taille maximale de la modale */
   text-align: center;
+  color: black; /* Texte en noir */
 }
 
 /* Image dans la modale */
@@ -150,7 +151,7 @@ footer {
 .description {
   font-size: 16px;
   margin-top: 15px;
-  color: #333; /* Couleur du texte de la description */
+  color: black; /* Texte de la description en noir */
 }
 
 /* Bouton de fermeture (croix) */
@@ -158,7 +159,7 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #aaa;
+  color: white;  /* Changer la couleur de la croix en blanc pour mieux contraster */
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -167,6 +168,6 @@ footer {
 /* Effet au survol pour la croix */
 .close:hover,
 .close:focus {
-  color: black;
+  color: #ffb703;  /* Couleur orange au survol pour attirer l'attention */
   text-decoration: none;
 }
