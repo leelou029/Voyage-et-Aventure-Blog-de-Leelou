@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voyage et Aventure - Blog de Leelou</title>
+  <title>Voyage & Aventure - Blog de Leelou</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <header>
-    <h1>🌍 Voyage et Aventure</h1>
+    <h1>🌍 Voyage & Aventure</h1>
     <p>Blog de Leelou</p>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html" class="active">Accueil</a></li>
         <li><a href="destinations.html">Destinations</a></li>
         <li><a href="conseils.html">Conseils</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -21,16 +23,84 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Pars à la découverte du monde 🌴</h2>
-      <p>Bienvenue sur mon blog de voyage. Je partage ici mes aventures, mes découvertes et mes meilleurs conseils pour explorer la planète !</p>
-      <button onclick="window.location.href='destinations.html'">Découvrir les destinations</button>
+
+    <!-- SECTION HERO -->
+    <section class="hero-accueil">
+      <div class="hero-content">
+        <h2>Prête à explorer le monde ? ✈️</h2>
+        <p>Découvre mes voyages, mes conseils authentiques et les plus belles destinations que j’ai eu la chance d’explorer. Bienvenue dans mon univers.</p>
+        <button onclick="window.location.href='destinations.html'">Explorer les destinations</button>
+      </div>
     </section>
+
+    <!-- SECTION DESTINATIONS MISE EN AVANT -->
+    <section class="home-section">
+      <h2>Destinations à ne pas manquer 🌍</h2>
+
+      <div class="home-cards">
+
+        <div class="home-card" onclick="window.location.href='destinations.html'">
+          <img src="télécharger.webp" alt="Bali">
+          <h3>Bali, Indonésie</h3>
+          <p>Entre plages paradisiaques, temples sacrés et rizières, Bali te transporte dans un univers magique.</p>
+        </div>
+
+        <div class="home-card" onclick="window.location.href='destinations.html'">
+          <img src="ville.webp" alt="Amsterdam">
+          <h3>Amsterdam, Pays-Bas</h3>
+          <p>Une ville romantique au fil des canaux, idéale pour un city-trip inoubliable.</p>
+        </div>
+
+        <div class="home-card" onclick="window.location.href='destinations.html'">
+          <img src="ile.webp" alt="Maldives">
+          <h3>Maldives</h3>
+          <p>Un véritable paradis entre eau turquoise, sable blanc et sérénité absolue.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION CONSEILS -->
+    <section class="home-section">
+      <h2>Conseils essentiels pour voyager ✨</h2>
+
+      <div class="tips-preview">
+        <div class="tip-small">
+          <h3>🎒 Voyager léger</h3>
+          <p>Les indispensables, l’organisation, et comment optimiser ta valise simplement.</p>
+        </div>
+
+        <div class="tip-small">
+          <h3>💰 Budget voyage</h3>
+          <p>Mes astuces pour économiser sans te priver lors de tes voyages.</p>
+        </div>
+
+        <div class="tip-small">
+          <h3>📸 Photos & souvenirs</h3>
+          <p>Comment capturer des moments authentiques et ne rien perdre.</p>
+        </div>
+      </div>
+
+      <button class="btn-center" onclick="window.location.href='conseils.html'">Voir tous les conseils</button>
+
+    </section>
+
+    <!-- SECTION A PROPOS -->
+    <section class="apropos-section">
+      <div class="apropos-content">
+        <h2>À propos de moi 💛</h2>
+        <p>Je m'appelle Leelou et je suis passionnée de voyages, d’aventures, de découvertes et de partage. À travers ce blog, je raconte mes expériences, je donne mes conseils honnêtes, mes coups de cœur et mes incontournables.  
+        J’espère t’aider à préparer ton prochain voyage, te donner envie d’explorer le monde et à créer tes propres souvenirs inoubliables.</p>
+        <button onclick="window.location.href='contact.html'">Me contacter</button>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <p>© 2025 Voyage et Aventure - Blog de Leelou</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
