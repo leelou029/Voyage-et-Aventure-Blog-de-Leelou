@@ -26,16 +26,32 @@
 
     <!-- SECTION HERO -->
     <section class="hero">
-  
+
       <h2>Prête à explorer le monde ? ✈️</h2>
       <p>Découvre mes voyages, mes conseils authentiques et les plus belles destinations que j’ai eu la chance d’explorer. Bienvenue dans mon univers.</p>
       <button onclick="window.location.href='destinations.html'">Explorer les destinations</button>
-     
+
+      <div class="hero-badges">
+        <span class="pill">+30 pays visités</span>
+        <span class="pill">Carnets de route détaillés</span>
+        <span class="pill">Conseils testés sur le terrain</span>
+      </div>
+
     </section>
 
     <!-- SECTION DESTINATIONS MISE EN AVANT -->
     <section class="home-section">
       <h2>Destinations à ne pas manquer 🌍</h2>
+
+      <div class="mini-intro">
+        <p>Des îles tropicales aux capitales cosy, voici mes coups de cœur pour planifier ton prochain voyage.</p>
+        <div class="filters">
+          <span class="chip">Nature</span>
+          <span class="chip">City break</span>
+          <span class="chip">Aventure</span>
+          <span class="chip">Budget friendly</span>
+        </div>
+      </div>
 
       <div class="home-cards">
 
@@ -57,6 +73,49 @@
           <p>Un véritable paradis entre eau turquoise, sable blanc et sérénité absolue.</p>
         </div>
 
+      </div>
+    </section>
+
+    <!-- SECTION DERNIERES AVENTURES -->
+    <section class="home-section latest">
+      <div class="section-head">
+        <div>
+          <h2>Mes dernières escapades ✍️</h2>
+          <p class="muted">Des récits authentiques avec itinéraires, bonnes adresses et astuces pour chaque étape.</p>
+        </div>
+        <button onclick="window.location.href='conseils.html'" class="ghost">Lire les récits</button>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <div class="story-tag">48h</div>
+          <h3>Week-end slow à Amsterdam</h3>
+          <p>Balades à vélo le long des canaux, cafés brun et musées intimistes. Je partage mon itinéraire express.</p>
+          <div class="story-meta">
+            <span>Budget : €€</span>
+            <span>Saison : printemps</span>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-tag">7 jours</div>
+          <h3>Road trip dans les Alpes</h3>
+          <p>Cols mythiques, fromageries de village et lacs turquoise : mon circuit favori pour respirer l’altitude.</p>
+          <div class="story-meta">
+            <span>Budget : €</span>
+            <span>Saison : été</span>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-tag">10 jours</div>
+          <h3>Plongées et temples à Bali</h3>
+          <p>De Canggu à Ubud en passant par Nusa Penida : spots, guides locaux et hébergements authentiques.</p>
+          <div class="story-meta">
+            <span>Budget : €€</span>
+            <span>Saison : mai-oct.</span>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -83,6 +142,54 @@
 
       <button class="btn-center" onclick="window.location.href='conseils.html'">Voir tous les conseils</button>
 
+    </section>
+
+    <!-- SECTION ITINERAIRE -->
+    <section class="home-section itinerary">
+      <h2>Un itinéraire type pour organiser ton prochain voyage</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="icon">🧭</div>
+          <div>
+            <h3>1. Choisir l’ambiance</h3>
+            <p>Tropical, urbain ou montagne : je t’aide à sélectionner la destination en fonction de ton humeur.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="icon">🗺️</div>
+          <div>
+            <h3>2. Bloquer les étapes</h3>
+            <p>Je propose des circuits optimisés avec temps de trajet, spots photo et pauses gourmandes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="icon">🏡</div>
+          <div>
+            <h3>3. Trouver les bonnes adresses</h3>
+            <p>Hébergements cosy, hôtels durables ou guesthouses : je teste et partage les pépites.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="icon">🧳</div>
+          <div>
+            <h3>4. Préparer sans stress</h3>
+            <p>Checklist bagage, documents et budget : tout est prêt pour profiter dès ton arrivée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION NEWSLETTER -->
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">CARNET DE ROUTE</p>
+        <h2>Chaque mois, de nouvelles idées d’escapades</h2>
+        <p class="muted">Recevez mes itinéraires favoris, des adresses confidentielles et des fiches pratiques prêtes à imprimer.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Ton email" aria-label="Ton email">
+        <button type="button">Je m’inscris</button>
+      </form>
     </section>
 
     <!-- SECTION A PROPOS -->
