@@ -1,5 +1,6 @@
-// Message de confirmation dans le formulaire
 document.addEventListener("DOMContentLoaded", () => {
+
+  /* FORMULAIRE (tu peux garder) */
   const form = document.getElementById("contactForm");
   const confirmation = document.getElementById("confirmation");
 
@@ -11,33 +12,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Sélectionner toutes les images de la galerie
-  const images = document.querySelectorAll('.image');
+  /* ==============================
+        MODALE PREMIUM
+  ============================== */
 
-  // Sélectionner les éléments de la modale
+  const images = document.querySelectorAll('.image');
   const modal = document.getElementById("modal");
+  const modalContent = document.querySelector(".modal-content");
   const modalImg = document.getElementById("modal-img");
   const modalDescription = document.getElementById("modal-description");
   const closeBtn = document.getElementById("close");
 
-  // Ouvrir la modale lorsque l'utilisateur clique sur une image
-  images.forEach((img) => {
-    img.addEventListener("click", function() {
-      modal.style.display = "flex";  // Affiche la modale
-      modalImg.src = this.src;      // Remplace l'image dans la modale
-      modalDescription.innerHTML = this.getAttribute("data-description");  // Affiche la description
+  // OUVERTURE
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modalDescription.innerHTML = img.getAttribute("data-description");
+      modal.classList.add("show");
     });
   });
 
-  // Fermer la modale lorsque l'utilisateur clique sur la croix (bouton close)
-  closeBtn.addEventListener("click", function() {
-    modal.style.display = "none";  // Cache la modale
+  // FERMETURE via la croix
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
   });
 
-  // Fermer la modale si l'utilisateur clique en dehors de l'image
-  window.addEventListener("click", function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";  // Cache la modale si on clique en dehors
+  // FERMETURE en cliquant hors de la carte
+  modal.addEventListener("click", (e) => {
+    if (!modalContent.contains(e.target)) {
+      modal.classList.remove("show");
     }
   });
+
+  // FERMETURE avec ECHAP
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.classList.remove("show");
+    }
+  });
+
 });
