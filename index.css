@@ -420,6 +420,8 @@ button:hover {
   grid-template-columns: 1.2fr 1fr;
   gap: 14px;
   border: 1px solid rgba(26, 138, 209, 0.12);
+  align-items: stretch;
+  overflow: hidden;
 }
 
 .story-main {
@@ -470,6 +472,7 @@ button:hover {
   border-radius: 12px;
   padding: 12px;
   border: 1px solid rgba(26, 138, 209, 0.08);
+  line-height: 1.55;
 }
 
 .journey-steps strong {
@@ -484,7 +487,10 @@ button:hover {
 
 .story-aside img {
   height: 100%;
+  max-height: 360px;
   object-fit: cover;
+  width: 100%;
+  border-radius: 14px;
 }
 
 .story-badge {
@@ -650,11 +656,6 @@ button:hover {
   padding: 14px;
   background: #fff;
   border-radius: var(--radius);
-  padding: clamp(24px, 5vw, 36px);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 18px;
   box-shadow: var(--shadow);
 }
 
