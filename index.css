@@ -421,12 +421,31 @@ button:hover {
   gap: 14px;
   border: 1px solid rgba(26, 138, 209, 0.12);
   align-items: stretch;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .story-main {
   display: grid;
   gap: 10px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) rgba(26, 138, 209, 0.12);
+}
+
+.story-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.story-main::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary), #22c48b);
+  border-radius: 999px;
+}
+
+.story-main::-webkit-scrollbar-track {
+  background: rgba(26, 138, 209, 0.08);
+  border-radius: 999px;
 }
 
 .story-main h3 {
@@ -886,6 +905,12 @@ footer p {
 
   .story-detail {
     grid-template-columns: 1fr;
+  }
+
+  .story-main {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
   }
 }
 
