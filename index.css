@@ -420,16 +420,16 @@ button:hover {
   grid-template-columns: 1.2fr 1fr;
   gap: 14px;
   border: 1px solid rgba(26, 138, 209, 0.12);
-  align-items: stretch;
+  align-items: start;
   overflow: visible;
 }
 
 .story-main {
   display: grid;
   gap: 10px;
-  max-height: 520px;
-  overflow-y: auto;
-  padding-right: 6px;
+  height: auto;
+  overflow: visible;
+  padding-right: 0;
   scrollbar-width: thin;
   scrollbar-color: var(--primary) rgba(26, 138, 209, 0.12);
 }
