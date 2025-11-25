@@ -650,6 +650,11 @@ button:hover {
   padding: 14px;
   background: #fff;
   border-radius: var(--radius);
+  padding: clamp(24px, 5vw, 36px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 18px;
   box-shadow: var(--shadow);
 }
 
